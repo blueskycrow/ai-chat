@@ -7,8 +7,8 @@ settings:
 catalogs:
   default:
     '@changesets/changelog-github':
-      specifier: ^0.7.0
-      version: 0.7.0
+      specifier: ^1.0.1
+      version: 1.0.1
     '@changesets/cli':
       specifier: ^2.31.1
       version: 2.31.1
@@ -531,7 +531,7 @@ importers:
     devDependencies:
       '@changesets/changelog-github':
         specifier: 'catalog:'
-        version: 0.7.0
+        version: 1.0.1
       '@changesets/cli':
         specifier: 'catalog:'
         version: 2.31.1(@types/node@25.9.5)
@@ -784,7 +784,7 @@ importers:
     dependencies:
       '@types/markdown-it':
         specifier: ^14.1.2
-        version: 14.1.2
+        version: 14.2.0
       '@vben/access':
         specifier: workspace:*
         version: link:../../packages/effects/access
@@ -838,7 +838,7 @@ importers:
         version: 2.14.3(vue@3.5.40(typescript@6.0.3))
       highlight.js:
         specifier: ^11.11.1
-        version: 11.11.1
+        version: 11.12.0
       markdown-it:
         specifier: ^14.3.0
         version: 14.3.0
@@ -1325,7 +1325,7 @@ importers:
     dependencies:
       '@ctrl/tinycolor':
         specifier: ^4.2.0
-        version: 4.2.0
+        version: 4.2.1
       '@tanstack/vue-store':
         specifier: 'catalog:'
         version: 0.11.0(vue@3.5.40(typescript@6.0.3))
@@ -2806,8 +2806,9 @@ packages:
   '@changesets/changelog-git@0.2.1':
     resolution: {integrity: sha512-x/xEleCFLH28c3bQeQIyeZf8lFXyDFVn1SgcBiR2Tw/r4IAWlk1fzxCEZ6NxQAjF2Nwtczoen3OA2qR+UawQ8Q==}
 
-  '@changesets/changelog-github@0.7.0':
-    resolution: {integrity: sha512-rBsbRvc4TVn+FvFnOVM3LxlFJfTXXCp8gfVJ+0BubxWNSVnLuAzowi5j+IEraLLP52w8AAs9QfKbPS3MMiXQJA==}
+  '@changesets/changelog-github@1.0.1':
+    resolution: {integrity: sha512-QUcrV7878yHlWPXXPA6gqSxNKwtVHCd1K22L7ZAoJw2yGy8K4QvjwOStD75+1Q9KD9ZSUgGS94HuYdd7HOVtpA==}
+    engines: {node: ^22.11 || ^24 || >=26}
 
   '@changesets/cli@2.31.1':
     resolution: {integrity: sha512-uO05WTcRBwuVOJVSW8Cmpqw6q0WDL53ajGCMyszutvOe5toOnunbpM4jZzf+qxBOz7i0AzopZ8diBuewjmF40w==}
@@ -2822,8 +2823,9 @@ packages:
   '@changesets/get-dependents-graph@2.1.4':
     resolution: {integrity: sha512-ZsS00x6WvmHq3sQv8oCMwL0f/z3wbXCVuSVTJwCnnmbC/iBdNJGFx1EcbMG4PC6sXRyH69liM4A2WKXzn/kRPg==}
 
-  '@changesets/get-github-info@0.8.0':
-    resolution: {integrity: sha512-cRnC+xdF0JIik7coko3iUP9qbnfi1iJQ3sAa6dE+Tx3+ET8bjFEm63PA4WEohgjYcmsOikPHWzPsMWWiZmntOQ==}
+  '@changesets/get-github-info@1.0.1':
+    resolution: {integrity: sha512-ifLQCky/ZtDgZ4xCiUMjnLZSJ8xk52iIzMJbBBPlZWjr2CiTNTaTDddIVWKicrUAdWuLWL7PUw2fNa1yPwLpIg==}
+    engines: {node: ^22.11 || ^24 || >=26}
 
   '@changesets/get-release-plan@4.0.16':
     resolution: {integrity: sha512-2K5Om6CrMPm45rtvckfzWo7e9jOVCKLCnXia5eUPaURH7/LWzri7pK1TycdzAuAtehLkW7VPbWLCSExTHmiI6g==}
@@ -2854,6 +2856,10 @@ packages:
 
   '@changesets/types@6.1.0':
     resolution: {integrity: sha512-rKQcJ+o1nKNgeoYRHKOS07tAMNd3YSN0uHaJOZYjBAgxfV7TUE7JE+z4BzZdQwb5hKaYbayKN5KrYV7ODb2rAA==}
+
+  '@changesets/types@7.0.0':
+    resolution: {integrity: sha512-c5GoiQyt3pxiXjrWSNoP8/GRf4kG+VnKzovx1OQM8dYYALlSwgedmkPmJ+ZqGxqwg9D3Bkj85Uo4KLd5BN3A0w==}
+    engines: {node: ^22.11 || ^24 || >=26}
 
   '@changesets/write@0.4.0':
     resolution: {integrity: sha512-CdTLvIOPiCNuH71pyDu3rA+Q0n65cmAbXnwWH84rKGiFumFzkmHNT8KHTMEchcxN+Kl8I54xGUhJ7l3E7X396Q==}
@@ -3245,6 +3251,10 @@ packages:
 
   '@ctrl/tinycolor@4.2.0':
     resolution: {integrity: sha512-kzyuwOAQnXJNLS9PSyrk0CWk35nWJW/zl/6KvnTBMFK65gm7U1/Z5BqjxeapjZCIhQcM/DsrEmcbRwDyXyXK4A==}
+    engines: {node: '>=14'}
+
+  '@ctrl/tinycolor@4.2.1':
+    resolution: {integrity: sha512-Vh5uy9Y1JBMId6J1f68TMXnZrTCvNdo9Fu2k0d1YnJngR+sM5kWTKl441c/3TFs+cG0NWOjRWgQ/iaWhbYx+7A==}
     engines: {node: '>=14'}
 
   '@cyberalien/svg-utils@1.2.19':
@@ -3836,6 +3846,9 @@ packages:
 
   '@jridgewell/sourcemap-codec@1.5.5':
     resolution: {integrity: sha512-cYQ9310grqxueWbl+WuIUIaiUaDcj7WOq5fVhEljNVgRfOUhY9fy2zTvfoqWsnebh8Sl70VScFbICvJnLKB0Og==}
+
+  '@jridgewell/sourcemap-codec@1.6.0':
+    resolution: {integrity: sha512-T7jf+5zgsZHwNJ4lvQ7/aezbyk0nNX+zJVWpmHA7VYsEx7a7qr5Rg5IbtJFqkgze5Y2sruq1RUY8Q837Od7iFw==}
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
@@ -5517,8 +5530,8 @@ packages:
   '@types/lodash@4.17.24':
     resolution: {integrity: sha512-gIW7lQLZbue7lRSWEFql49QJJWThrTFFeIMJdp3eH4tKoxm1OvEPg02rm4wCCSHS0cL3/Fizimb35b7k8atwsQ==}
 
-  '@types/markdown-it@14.1.2':
-    resolution: {integrity: sha512-promo4eFwuiW+TfGxhi+0x3czqTYJkG8qB17ZUJiVF10Xm7NLVRSLUsfRTU/6h1e24VvRnXCx+hG7li58lkzog==}
+  '@types/markdown-it@14.2.0':
+    resolution: {integrity: sha512-NoQ2yGlLWj4wpxMs+TYmRKk3thDrQ97agr7sFqfLsAlvoS8SNQuTrlObhFqG9iugdTtgOE9jpJ6FNM4ZGsa5xQ==}
 
   '@types/mdast@4.0.4':
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
@@ -6859,6 +6872,7 @@ packages:
 
   crypto-js@4.2.0:
     resolution: {integrity: sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==}
+    deprecated: Active development of CryptoJS has been discontinued. This library is no longer maintained.
 
   crypto-random-string@2.0.0:
     resolution: {integrity: sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA==}
@@ -6963,8 +6977,8 @@ packages:
     resolution: {integrity: sha512-BS8PfmtDGnrgYdOonGZQdLZslWIeCGFP9tpan0hi1Co2Zr2NKADsvGYA8XxuG/4UWgJ6Cjtv+YJnB6MM69QGlQ==}
     engines: {node: '>= 0.4'}
 
-  dataloader@1.4.0:
-    resolution: {integrity: sha512-68s5jYdlvasItOJnCuI2Q9s4q98g0pCyL3HrcKJu8KNugUl8ahgmZYg38ysLTgQjjXX3H8CJLkAvWrclWfcalw==}
+  dataloader@2.2.3:
+    resolution: {integrity: sha512-y2krtASINtPFS1rSDjacrFgn1dcUuoREVabwlOGOe4SdxenREqwjwjElAdwvbGM7kgZz9a3KVicWR7vcz8rnzA==}
 
   date-fns-tz@3.2.0:
     resolution: {integrity: sha512-sg8HqoTEulcbbbVXeg84u5UnlsQa8GS5QXMqjjYIhS4abEVVKIUwe0/l/UhrZdKaL/W5eWZNlbTeEIiOXTcsBQ==}
@@ -7141,10 +7155,6 @@ packages:
     resolution: {integrity: sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw==}
     engines: {node: '>=12'}
 
-  dotenv@8.6.0:
-    resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}
-    engines: {node: '>=10'}
-
   dts-resolver@3.0.0:
     resolution: {integrity: sha512-1T1f+z+4tl9XD+m+0HBgWoL/nm0bOIffyWaUuUSBlFg/86IWvfx+wjNaO/ybU0AJzG9/Mi5hBUgGV6zCmWEN7Q==}
     engines: {node: ^22.18.0 || >=24.0.0}
@@ -7255,6 +7265,9 @@ packages:
 
   errx@0.1.0:
     resolution: {integrity: sha512-fZmsRiDNv07K6s2KkKFTiD2aIvECa7++PKyD5NC32tpRw46qZA3sOz+aM+/V9V0GDHxVTKLziveV4JhzBHDp9Q==}
+
+  errx@0.1.2:
+    resolution: {integrity: sha512-chfpPHmCerdo/rXr/nNvPZRkV4WwDRwzwnsJ0Uzz3tVi8Z41tDctRjduYy1138ii77AFlts1qvWtX3g/Acg91Q==}
 
   es-abstract-get@1.0.0:
     resolution: {integrity: sha512-6PMWXpdhshVvFp+FoWYs1EvG1Nj0tvk0dZM+XcK0xMEM1czRVcP6ohqPWHy6qPagSpC8j4+p89WXlT+xXJs/fg==}
@@ -7895,8 +7908,8 @@ packages:
   hey-listen@1.0.8:
     resolution: {integrity: sha512-COpmrF2NOg4TBWUJ5UVyaCU2A88wEMkUPK4hNqyCkqHbxT92BbvfjoSozkAIIm6XhicGlJHhFdullInrdhwU8Q==}
 
-  highlight.js@11.11.1:
-    resolution: {integrity: sha512-Xwwo44whKBVCYoliBQwaPvtd/2tYFkRQtXDWj1nackaV2JPXx3L0+Jvd8/qCJ2p+ML0/XVkJ2q+Mr+UVdpJK5w==}
+  highlight.js@11.12.0:
+    resolution: {integrity: sha512-nbfWpyRMcMrPMmDwJB+dhX/eiaPKtc2RB+0QZskqJ3WjRA/FDS0e9hZrx8EC/lbEv8gXy98FcDbNa/dspAaJMg==}
     engines: {node: '>=12.0.0'}
 
   hookable@5.5.3:
@@ -9030,6 +9043,9 @@ packages:
   ohash@2.0.11:
     resolution: {integrity: sha512-RdR9FQrFwNBNXAr4GixM8YaRZRJ5PUWbKYbE5eOsrwAjJW0q2REGcf79oYPsLyskQCZG1PLN+S/K1V00joZAoQ==}
 
+  ohash@2.0.12:
+    resolution: {integrity: sha512-65S/5gk9YSsaRjcyf7Nfa6h/d3E8/1gslpXfI4W7Dxn/oap8IKRuNT5VXkLQ1YFKIEg4apRY4Pj6aiwFzrDdmw==}
+
   on-finished@2.4.1:
     resolution: {integrity: sha512-oVlzkg3ENAhCk2zdv7IJwd/QUD4z2RxRwpkcGY8psCVcCYZNq4wYnVWALHM+brtuJjePWiYF/ClmuDr8Ch5+kg==}
     engines: {node: '>= 0.8'}
@@ -9531,8 +9547,8 @@ packages:
     resolution: {integrity: sha512-AhNB2KgKeVJr16nK9LLZbJNWnYoT23ZrumNKFDebHBdkC8KHSqWo871JAUhoWC/RtjEVdqNMFpM6qrwRbaUqpw==}
     engines: {node: '>=18'}
 
-  readdirp@5.0.0:
-    resolution: {integrity: sha512-9u/XQ1pvrQtYyMpZe7DXKv2p5CNvyVwzUB6uhLAnQwHMSgKMBR62lc7AHljaeteeHXn11XTAaLLUVZYVZyuRBQ==}
+  readdirp@5.1.1:
+    resolution: {integrity: sha512-Kko+Y5XQ6fM+Ce3dq3m9YGxnacYZYl9cA1wZjaF3Vbry2L3i1qVg8+CAgNPsXRArPMUMCaOR7oa9Nqntc43JKA==}
     engines: {node: '>= 20.19.0'}
 
   redis-errors@1.2.0:
@@ -10077,8 +10093,8 @@ packages:
     resolution: {integrity: sha512-GaPUh5gfdrYzqeVNZvUfT23vYYxXzKYidUcnMtJg/3rxRV63EFZy3k6xfKlmfeJD0176lnUV/Usr3XcwSvFzpg==}
     engines: {node: '>=20'}
 
-  string.prototype.matchall@4.0.12:
-    resolution: {integrity: sha512-6CC9uyBL+/48dYizRf7H7VAYCMCNTBeM78x/VTUe9bFEaxBepPJDa1Ow99LqI/1yF7kuy7Q3cQsYMrcjGUcskA==}
+  string.prototype.matchall@4.1.0:
+    resolution: {integrity: sha512-tHNHTxInrYLCga9O9YGxWA3G9/nnzQw8UGAyqGx3Ar1pSTTzIuM4woFSq4SowkXCjJIwq5sIiQvEfRI9tCH1qQ==}
     engines: {node: '>= 0.4'}
 
   string.prototype.trim@1.2.11:
@@ -10992,6 +11008,9 @@ packages:
   vscode-uri@3.1.0:
     resolution: {integrity: sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ==}
 
+  vscode-uri@3.2.0:
+    resolution: {integrity: sha512-m2gXo3bn0G1kT9InzMf07fTbqMbGtyckj3bH5ktLO+1Ssv+yiATZ4dhwaQv9UZWxJh6E9IFGnQyjgWVDWVBDrg==}
+
   vue-component-type-helpers@3.3.8:
     resolution: {integrity: sha512-troqCMmQodQDqUqn63NQaFi+CDSclSe7sc8VEBFqf5GFLqmGR2Ph3P2WEC7qwpRVyEWsTi/aAr4vyOe/B1hU3g==}
 
@@ -11362,7 +11381,7 @@ snapshots:
 
   '@ant-design/colors@6.0.0':
     dependencies:
-      '@ctrl/tinycolor': 4.2.0
+      '@ctrl/tinycolor': 4.2.1
 
   '@ant-design/colors@7.2.1':
     dependencies:
@@ -12231,13 +12250,10 @@ snapshots:
     dependencies:
       '@changesets/types': 6.1.0
 
-  '@changesets/changelog-github@0.7.0':
+  '@changesets/changelog-github@1.0.1':
     dependencies:
-      '@changesets/get-github-info': 0.8.0
-      '@changesets/types': 6.1.0
-      dotenv: 8.6.0
-    transitivePeerDependencies:
-      - encoding
+      '@changesets/get-github-info': 1.0.1
+      '@changesets/types': 7.0.0
 
   '@changesets/cli@2.31.1(@types/node@25.9.5)':
     dependencies:
@@ -12292,12 +12308,9 @@ snapshots:
       picocolors: 1.1.1
       semver: 7.8.5
 
-  '@changesets/get-github-info@0.8.0':
+  '@changesets/get-github-info@1.0.1':
     dependencies:
-      dataloader: 1.4.0
-      node-fetch: 2.7.0
-    transitivePeerDependencies:
-      - encoding
+      dataloader: 2.2.3
 
   '@changesets/get-release-plan@4.0.16':
     dependencies:
@@ -12352,6 +12365,8 @@ snapshots:
   '@changesets/types@4.1.0': {}
 
   '@changesets/types@6.1.0': {}
+
+  '@changesets/types@7.0.0': {}
 
   '@changesets/write@0.4.0':
     dependencies:
@@ -12752,6 +12767,8 @@ snapshots:
       postcss-selector-parser: 7.1.4
 
   '@ctrl/tinycolor@4.2.0': {}
+
+  '@ctrl/tinycolor@4.2.1': {}
 
   '@cyberalien/svg-utils@1.2.19':
     dependencies:
@@ -13219,6 +13236,8 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.5': {}
 
+  '@jridgewell/sourcemap-codec@1.6.0': {}
+
   '@jridgewell/trace-mapping@0.3.31':
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
@@ -13390,14 +13409,14 @@ snapshots:
       consola: 3.4.2
       defu: 6.1.7
       destr: 2.0.5
-      errx: 0.1.0
+      errx: 0.1.2
       exsolve: 1.1.0
       ignore: 7.0.6
       jiti: 2.7.0
       klona: 2.0.6
       mlly: 1.8.2
       nostics: 1.2.0
-      ohash: 2.0.11
+      ohash: 2.0.12
       pathe: 2.0.3
       pkg-types: 2.3.1
       rc9: 3.0.1
@@ -13420,14 +13439,14 @@ snapshots:
       consola: 3.4.2
       defu: 6.1.7
       destr: 2.0.5
-      errx: 0.1.0
+      errx: 0.1.2
       exsolve: 1.1.0
       ignore: 7.0.6
       jiti: 2.7.0
       klona: 2.0.6
       mlly: 1.8.2
       nostics: 1.2.0
-      ohash: 2.0.11
+      ohash: 2.0.12
       pathe: 2.0.3
       pkg-types: 2.3.1
       rc9: 3.0.1
@@ -14476,7 +14495,7 @@ snapshots:
       ejs: 3.1.10
       json5: 2.2.3
       magic-string: 0.30.21
-      string.prototype.matchall: 4.0.12
+      string.prototype.matchall: 4.1.0
 
   '@tsdown/css@0.22.13(jiti@2.7.0)(postcss@8.5.22)(sass-embedded@1.100.0)(sass@1.101.6)(tsdown@0.22.13)(yaml@2.9.0)':
     dependencies:
@@ -14561,7 +14580,7 @@ snapshots:
 
   '@types/lodash@4.17.24': {}
 
-  '@types/markdown-it@14.1.2':
+  '@types/markdown-it@14.2.0':
     dependencies:
       '@types/linkify-it': 5.0.0
       '@types/mdurl': 2.0.0
@@ -15038,7 +15057,7 @@ snapshots:
     dependencies:
       '@volar/language-core': 2.4.28
       path-browserify: 1.0.1
-      vscode-uri: 3.1.0
+      vscode-uri: 3.2.0
 
   '@vue-macros/common@3.1.4(vue@3.5.40(typescript@6.0.3))':
     dependencies:
@@ -15836,7 +15855,7 @@ snapshots:
 
   chokidar@5.0.0:
     dependencies:
-      readdirp: 5.0.0
+      readdirp: 5.1.1
 
   chownr@3.0.0: {}
 
@@ -16214,7 +16233,7 @@ snapshots:
       es-errors: 1.3.0
       is-data-view: 1.0.2
 
-  dataloader@1.4.0: {}
+  dataloader@2.2.3: {}
 
   date-fns-tz@3.2.0(date-fns@4.4.0):
     dependencies:
@@ -16342,8 +16361,6 @@ snapshots:
 
   dotenv@17.4.2: {}
 
-  dotenv@8.6.0: {}
-
   dts-resolver@3.0.0(oxc-resolver@11.24.2):
     optionalDependencies:
       oxc-resolver: 11.24.2
@@ -16451,7 +16468,10 @@ snapshots:
 
   error-stack-parser-es@1.0.5: {}
 
-  errx@0.1.0: {}
+  errx@0.1.0:
+    optional: true
+
+  errx@0.1.2: {}
 
   es-abstract-get@1.0.0:
     dependencies:
@@ -17295,7 +17315,7 @@ snapshots:
 
   hey-listen@1.0.8: {}
 
-  highlight.js@11.11.1: {}
+  highlight.js@11.12.0: {}
 
   hookable@5.5.3: {}
 
@@ -18073,7 +18093,7 @@ snapshots:
 
   magic-string@0.30.21:
     dependencies:
-      '@jridgewell/sourcemap-codec': 1.5.5
+      '@jridgewell/sourcemap-codec': 1.6.0
 
   magicast@0.5.3:
     dependencies:
@@ -18224,7 +18244,7 @@ snapshots:
       date-fns: 4.4.0
       date-fns-tz: 3.2.0(date-fns@4.4.0)
       evtd: 0.2.4
-      highlight.js: 11.11.1
+      highlight.js: 11.12.0
       lodash: 4.18.1
       lodash-es: 4.18.1
       seemly: 0.3.10
@@ -18440,6 +18460,8 @@ snapshots:
       ufo: 1.6.4
 
   ohash@2.0.11: {}
+
+  ohash@2.0.12: {}
 
   on-finished@2.4.1:
     dependencies:
@@ -19030,7 +19052,7 @@ snapshots:
     dependencies:
       minimatch: 10.2.5
 
-  readdirp@5.0.0: {}
+  readdirp@5.1.1: {}
 
   redis-errors@1.2.0: {}
 
@@ -19648,7 +19670,7 @@ snapshots:
       get-east-asian-width: 1.6.0
       strip-ansi: 7.2.0
 
-  string.prototype.matchall@4.0.12:
+  string.prototype.matchall@4.1.0:
     dependencies:
       call-bind: 1.0.9
       call-bound: 1.0.4
@@ -20566,7 +20588,7 @@ snapshots:
       '@shikijs/core': 4.3.1
       '@shikijs/transformers': 4.3.1
       '@shikijs/types': 4.3.1
-      '@types/markdown-it': 14.1.2
+      '@types/markdown-it': 14.2.0
       '@vitejs/plugin-vue': 6.0.8(vite@8.1.5(@types/node@26.1.1)(esbuild@0.28.1)(jiti@2.7.0)(less@4.8.0(supports-color@10.2.2))(sass-embedded@1.100.0)(sass@1.101.6)(terser@5.49.0)(yaml@2.9.0))(vue@3.5.40(typescript@6.0.3))
       '@vue/devtools-api': 8.1.5
       '@vue/shared': 3.5.40
@@ -20642,6 +20664,8 @@ snapshots:
   vscode-languageserver-textdocument@1.0.12: {}
 
   vscode-uri@3.1.0: {}
+
+  vscode-uri@3.2.0: {}
 
   vue-component-type-helpers@3.3.8: {}
 
