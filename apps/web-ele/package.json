@@ -45,7 +45,7 @@
     "dayjs": "catalog:",
     "element-plus": "catalog:",
     "highlight.js": "^11.11.1",
-    "markdown-it": "^14.3.0",
+    "markdown-it": "^15.0.3",
     "pinia": "catalog:",
     "vue": "catalog:",
     "vue-router": "catalog:"
